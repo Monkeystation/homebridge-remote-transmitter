@@ -37,3 +37,7 @@ Once you have that working, edit `~/.homebridge/config.json` and add a new acces
 ```
 
 'pin' is the physical GPIO pin that the 433Mhz transmitter is connected to.
+
+## Example
+
+![alt tag](example.jpg)
