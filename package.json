@@ -1,6 +1,6 @@
 {
   "name": "homebridge-remote-transmitter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Homebridge plugin for switching RF 433MHz based self-learning receivers",
   "author": "Job Wind <job@monkeystation.nl>",
   "license": "MIT",
