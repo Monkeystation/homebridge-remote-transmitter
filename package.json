@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "./homebridge-remote-transmitter",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "./homebridge-remote-transmitter",
+        "spec": "/home/pi/FTP/homebridge-remote-transmitter",
+        "type": "directory"
+      },
+      "/home/pi/FTP"
+    ]
+  ],
+  "_from": "../../home/pi/FTP/homebridge-remote-transmitter",
+  "_id": "homebridge-remote-transmitter@0.0.1",
+  "_inCache": true,
+  "_location": "/homebridge-remote-transmitter",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "./homebridge-remote-transmitter",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "./homebridge-remote-transmitter",
+    "spec": "/home/pi/FTP/homebridge-remote-transmitter",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../../home/pi/FTP/homebridge-remote-transmitter",
+  "_shasum": "3c748eb2cda24284036d229be154c140259c54f2",
+  "_shrinkwrap": null,
+  "_spec": "./homebridge-remote-transmitter",
+  "_where": "/home/pi/FTP",
+  "author": {
+    "name": "Job Wind",
+    "email": "job@monkeystation.nl"
+  },
+  "dependencies": {
+    "rpio": "^0.9.12"
+  },
+  "description": "Homebridge plugin for switching RF 433MHz based self-learning receivers",
+  "devDependencies": {},
+  "engines": {
+    "homebridge": ">=0.2.0",
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "license": "MIT",
+  "name": "homebridge-remote-transmitter",
+  "optionalDependencies": {},
+  "readme": "# Homebridge KlikAan-KlikUit plugin\n\nThis is a plugin for [Homebridge](https://github.com/nfarina/homebridge) to allow controlling your KlikAan-KlikUit outlets. This plugin is meant to run on Raspberry Pi's (or boards with a similar GPIO setup).\n\nYou'll need an external executable (`kaku`) that will take three arguments: address (A-Z), device number (1-4) and state (on/off).\n\nMy own setup is based [on this blogpost](http://weejewel.tweakblogs.net/blog/8665/lampen-schakelen-met-een-raspberry-pi).\n\n## Installation\n\n```\n$ npm i robertklep/homebridge-klikaan-klikuit -g\n```\n\nHomebridge plugins need to be installed globally, so the `-g` is mandatory.\n\n## Configuration\n\nFirst, you need a working Homebridge installation.\n\nOnce you have that working, edit `~/.homebridge/config.json` and add a new accessory:\n\n```\n\"accessories\": [\n    ...\n    {\n        \"accessory\" : \"KaKu\",\n        \"name\"      : \"licht woonkamer\",\n        \"pin\"       : 11,\n        \"address\"   : \"A\",\n        \"device\"    : \"1\",\n        \"service\"   : \"Lightbulb\"\n    },\n    {\n        \"accessory\" : \"KaKu\",\n        \"name\"      : \"licht keuken\",\n        \"pin\"       : 11,\n        \"address\"   : \"A\",\n        \"device\"    : \"2\",\n    }\n]\n```\n\n`pin` is the physical GPIO pin that the 433Mhz transmitter is connected to.\n",
+  "readmeFilename": "README.md",
+  "version": "0.0.1"
+}
