@@ -5,7 +5,7 @@ This is a plugin for [Homebridge](https://github.com/nfarina/homebridge) to allo
 ## Installation
 
 ```
-$ sudo npm install -g homebridge-remote-transmitter
+$ npm install -g homebridge-remote-transmitter
 ```
 
 ## Configuration
@@ -40,4 +40,4 @@ Once you have that working, edit `~/.homebridge/config.json` and add a new acces
 
 ## Example
 
-![alt tag](example.jpg)
+![alt tag](https://raw.githubusercontent.com/Monkeystation/homebridge-remote-transmitter/master/example.jpg)
